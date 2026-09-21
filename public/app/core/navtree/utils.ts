@@ -200,3 +200,6 @@ export function pruneEmptyNavSections(tree: NavModelItem[]): NavModelItem[] {
 
 /** Nav id of an app plugin's own entry/section (matches the Go builder's ids) */
 export const pluginPageId = (pluginId: string) => `plugin-page-${pluginId}`;
+
+/** Nav id of an app page placed on its own, keyed by its include path */
+export const standalonePluginPageId = (key: string) => `standalone-plugin-page-${key}`;
