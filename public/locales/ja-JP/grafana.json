@@ -357,10 +357,6 @@
     },
     "ai": {
       "error-boundary": {
-        "alert-rule-button": "AIアラートルールボタンの読み込みに失敗しました",
-        "feedback-button": "AIフィードバックボタンの読み込みに失敗しました",
-        "improve-annotations-button": "AI注釈改善ボタンの読み込みに失敗しました",
-        "improve-labels-button": "AIラベル改善ボタンの読み込みに失敗しました",
         "template-button": "AIテンプレートボタンの読み込みに失敗しました",
         "triage-button": "AIトリアージボタンの読み込みに失敗しました"
       }
@@ -448,6 +444,11 @@
       "text-loading-rules": "ルールを読み込み中...",
       "title-search-alert-rule": "アラートルールを検索",
       "title-select-alert-instances": "アラートインスタンスを選択"
+    },
+    "alert-instance-silence-action": {
+      "silence": "",
+      "subtitle": "",
+      "title": ""
     },
     "alert-instance-state-filter": {
       "state": "ステート"
@@ -1136,6 +1137,8 @@
       }
     },
     "editor": {
+      "duplicate-alert-rule": "",
+      "duplicate-recording-rule": "",
       "edit-alert-rule": "アラートルールの編集",
       "edit-recording-rule": "記録ルールの編集",
       "new-alert-rule": "新しいアラートルール",
@@ -1755,7 +1758,7 @@
         "datasource": "Alertmanagerデータソース",
         "datasource-autosync-badge": "自動同期",
         "heading": "通知リソースをインポート",
-        "next-disabled-tooltip": "必須フィールドに入力し、検証に合格するまで待ってから続行してください。",
+        "next-disabled-tooltip": "",
         "no-datasources": "Alertmanagerのデータソースが見つかりません",
         "no-permission-desc": "通知リソースをインポートする権限がありません。<strong>alerting.notifications:write</strong>権限が必要です。この手順はスキップできます。",
         "no-permission-title": "権限が不十分です",
@@ -1793,6 +1796,7 @@
         "yaml-desc": "使用できるファイルの種類：{{extensions}}",
         "yaml-file": "Alertmanager設定YAML",
         "yaml-invalid-type": "YAMLファイル（{{extensions}}）を指定してください",
+        "yaml-parse-error": "",
         "yaml-remove": "{{name}}を削除",
         "templates-added-title_other": "テンプレートファイルを追加しました"
       },
@@ -2101,8 +2105,8 @@
       "add-matcher": "マッチャーを追加",
       "aria-label-operator": "演算子",
       "aria-label-remove-matcher": "マッチャーを削除",
-      "label-alert-rule": "アラートルール",
       "label-label": "ラベル",
+      "label-matching-labels": "",
       "label-operator": "オペレーター",
       "label-refine-affected-alerts": "影響を受けるアラートを絞り込む",
       "label-value": "値",
@@ -3386,6 +3390,7 @@
       "schedule": "スケジュール"
     },
     "silence-grafana-rule-drawer": {
+      "subtitle": "",
       "title-silence-alert-rule": "アラートルールを消音"
     },
     "silence-period": {
@@ -3434,7 +3439,11 @@
       "preview-affected-instances": "このサイレントに影響を受けるアラートインスタンスをプレビューします。"
     },
     "silences-editor": {
+      "alert-rule-unavailable": "",
       "comment-placeholder-details-about-the-silence": "サイレンスに関する詳細",
+      "description-alert-rule-scope": "",
+      "description-alert-rule-unavailable": "",
+      "label-alert-rule": "",
       "label-comment": "コメント",
       "label-created-by": "作成者",
       "label-duration": "継続時間",
@@ -5167,6 +5176,10 @@
   },
   "connections": {
     "add-new-connection": {
+      "add-category": "",
+      "add-type": "",
+      "all-categories": "",
+      "all-types": "",
       "category": "カテゴリ",
       "clear": "クリア",
       "filter-by-category": "カテゴリで絞り込む",
@@ -5195,7 +5208,10 @@
         "by-published-date": "公開日順",
         "by-updated-date": "更新日順"
       },
+      "remove-filter-value": "",
       "reset-filters": "フィルターをリセット",
+      "selected-categories": "",
+      "selected-types": "",
       "sort": "並べ替え",
       "sort-list": "プラグインリストを並べ替え",
       "state": "状態",
@@ -11125,16 +11141,11 @@
     },
     "dashboard-tabs": {
       "most-used": "よく使うもの",
-      "most-used-active": "よく使われているダッシュボード",
       "recent": "最近",
-      "recent-active": "最近のダッシュボード",
       "retry": "再試行",
       "starred": "お気に入り",
-      "starred-active": "お気に入りのダッシュボード"
-    },
-    "dashboards": {
-      "title": "ダッシュボード",
-      "view-all": "すべて表示"
+      "title": "",
+      "view-all-dashboards": ""
     },
     "firing-alerts-card": {
       "create": "アラートルールを作成",
@@ -11309,15 +11320,25 @@
       },
       "title": "オブザーバビリティスタックの概要"
     },
-    "recent-dashboards-tab": {
-      "browse": "ダッシュボードを参照",
-      "clear": "履歴をクリア",
-      "create": "最初のダッシュボードを作成",
-      "empty": "最近表示したダッシュボードがここに表示されます。",
-      "empty-description": "データを接続した後、ダッシュボードを使用して、グラフ、統計、テーブルを使用してデータをクエリおよび視覚化するか、リスト、マークダウン、その他のウィジェットを作成できます。",
-      "error-title": "最近表示したダッシュボードを読み込めませんでした",
-      "loading": "最近表示したダッシュボードを読み込み中...",
-      "reset": "最近のダッシュボードをリセット"
+    "recent-activity-tab": {
+      "browse": "",
+      "clear": "",
+      "create": "",
+      "empty": "",
+      "error-title": "",
+      "filter-alerting": "",
+      "filter-all": "",
+      "filter-apps": "",
+      "filter-dashboards": "",
+      "filter-explore": "",
+      "filter-label": "",
+      "filter-pages": "",
+      "kind-alerting": "",
+      "kind-app": "",
+      "kind-dashboard": "",
+      "kind-explore": "",
+      "kind-page": "",
+      "loading": ""
     },
     "recommendations": {
       "application-observability": {
@@ -11887,6 +11908,9 @@
     "signup": {
       "button-label": "サインアップ",
       "new-to-question": "Grafanaは初めてですか？"
+    },
+    "title": {
+      "sign-in": ""
     }
   },
   "logs": {
@@ -12027,7 +12051,8 @@
         "loading-message": ""
       },
       "trace-section": "",
-      "unpin-line": "ログのピン留めを解除"
+      "unpin-line": "ログのピン留めを解除",
+      "view-in-traces-drilldown": ""
     },
     "log-line-menu": {
       "copy-link": "ログ行へのリンクをコピー",

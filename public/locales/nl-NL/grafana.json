@@ -357,10 +357,6 @@
     },
     "ai": {
       "error-boundary": {
-        "alert-rule-button": "De knop AI-waarschuwingsregel kan niet worden geladen",
-        "feedback-button": "De knop AI-feedback kan niet worden geladen",
-        "improve-annotations-button": "De knop AI-annotaties verbeteren kan niet worden geladen",
-        "improve-labels-button": "De knop AI-labels verbeteren kan niet worden geladen",
         "template-button": "De knop AI-sjabloon kan niet worden geladen",
         "triage-button": "De knop AI-triage kan niet worden geladen"
       }
@@ -453,6 +449,11 @@
       "text-loading-rules": "Regels laden...",
       "title-search-alert-rule": "Waarschuwingsregel zoeken",
       "title-select-alert-instances": "Waarschuwingsinstanties selecteren"
+    },
+    "alert-instance-silence-action": {
+      "silence": "",
+      "subtitle": "",
+      "title": ""
     },
     "alert-instance-state-filter": {
       "state": "Status"
@@ -1143,6 +1144,8 @@
       }
     },
     "editor": {
+      "duplicate-alert-rule": "",
+      "duplicate-recording-rule": "",
       "edit-alert-rule": "Waarschuwingsregel bewerken",
       "edit-recording-rule": "Opnameregel bewerken",
       "new-alert-rule": "Nieuwe waarschuwingsregel",
@@ -1763,7 +1766,7 @@
         "datasource": "Alertmanager-gegevensbron",
         "datasource-autosync-badge": "Automatische synchronisatie",
         "heading": "Meldingsbronnen importeren",
-        "next-disabled-tooltip": "Vul de verplichte velden in en wacht tot de validatie is geslaagd voordat je doorgaat.",
+        "next-disabled-tooltip": "",
         "no-datasources": "Geen Alertmanager-gegevensbronnen gevonden",
         "no-permission-desc": "Je hebt geen toestemming om meldingsbronnen te importeren. Je hebt de <strong>toestemming alerting.notifications:write</strong> nodig. Je kunt deze stap overslaan.",
         "no-permission-title": "Onvoldoende toestemmingen",
@@ -1801,6 +1804,7 @@
         "yaml-desc": "Geaccepteerde bestandstypen: {{extensions}}",
         "yaml-file": "YAML voor configuratie van Alertmanager",
         "yaml-invalid-type": "Bestand moet een YAML-bestand zijn ({{extensions}})",
+        "yaml-parse-error": "",
         "yaml-remove": "{{name}} verwijderen",
         "templates-added-title_one": "Sjabloonbestand toegevoegd",
         "templates-added-title_other": "Sjabloonbestanden toegevoegd"
@@ -2114,8 +2118,8 @@
       "add-matcher": "Matcher toevoegen",
       "aria-label-operator": "operator",
       "aria-label-remove-matcher": "Matcher verwijderen",
-      "label-alert-rule": "Waarschuwingsregel",
       "label-label": "Label",
+      "label-matching-labels": "",
       "label-operator": "Operator",
       "label-refine-affected-alerts": "Betrokken waarschuwingen verfijnen",
       "label-value": "Waarde",
@@ -3419,6 +3423,7 @@
       "schedule": "Plannen"
     },
     "silence-grafana-rule-drawer": {
+      "subtitle": "",
       "title-silence-alert-rule": "Waarschuwingsregel dempen"
     },
     "silence-period": {
@@ -3467,7 +3472,11 @@
       "preview-affected-instances": "Bekijk een voorbeeld van de waarschuwingsinstanties die door deze demping worden beïnvloed."
     },
     "silences-editor": {
+      "alert-rule-unavailable": "",
       "comment-placeholder-details-about-the-silence": "Details over de stilte",
+      "description-alert-rule-scope": "",
+      "description-alert-rule-unavailable": "",
+      "label-alert-rule": "",
       "label-comment": "Opmerking",
       "label-created-by": "Aangemaakt door",
       "label-duration": "Duur",
@@ -5214,6 +5223,10 @@
   },
   "connections": {
     "add-new-connection": {
+      "add-category": "",
+      "add-type": "",
+      "all-categories": "",
+      "all-types": "",
       "category": "Categorie",
       "clear": "Wissen",
       "filter-by-category": "Filteren op categorie",
@@ -5242,7 +5255,10 @@
         "by-published-date": "Op publicatiedatum",
         "by-updated-date": "Updated date"
       },
+      "remove-filter-value": "",
       "reset-filters": "Filters resetten",
+      "selected-categories": "",
+      "selected-types": "",
       "sort": "Sorteren",
       "sort-list": "Lijst met plug-ins sorteren",
       "state": "Status",
@@ -11203,16 +11219,11 @@
     },
     "dashboard-tabs": {
       "most-used": "Meest gebruikt",
-      "most-used-active": "Meest gebruikte dashboards",
       "recent": "Recent",
-      "recent-active": "Recente dashboards",
       "retry": "Opnieuw proberen",
       "starred": "Favorieten",
-      "starred-active": "Favoriete dashboards"
-    },
-    "dashboards": {
-      "title": "Dashboards",
-      "view-all": "Alles bekijken"
+      "title": "",
+      "view-all-dashboards": ""
     },
     "firing-alerts-card": {
       "create": "Waarschuwingsregel aanmaken",
@@ -11389,15 +11400,25 @@
       },
       "title": "Overzicht van je observability-stack"
     },
-    "recent-dashboards-tab": {
-      "browse": "Dashboards doorbladeren",
-      "clear": "Geschiedenis wissen",
-      "create": "Maak je eerste dashboard aan",
-      "empty": "Dashboards die je recent hebt bekeken, worden hier weergegeven.",
-      "empty-description": "Nadat je gegevens hebt gekoppeld, kun je dashboards gebruiken om je gegevens op te vragen en te visualiseren met grafieken, statistieken en tabellen of om lijsten, markdowns en andere widgets te maken.",
-      "error-title": "Kon recent bekeken dashboards niet laden",
-      "loading": "Recent bekeken dashboards laden...",
-      "reset": "Recente dashboards resetten"
+    "recent-activity-tab": {
+      "browse": "",
+      "clear": "",
+      "create": "",
+      "empty": "",
+      "error-title": "",
+      "filter-alerting": "",
+      "filter-all": "",
+      "filter-apps": "",
+      "filter-dashboards": "",
+      "filter-explore": "",
+      "filter-label": "",
+      "filter-pages": "",
+      "kind-alerting": "",
+      "kind-app": "",
+      "kind-dashboard": "",
+      "kind-explore": "",
+      "kind-page": "",
+      "loading": ""
     },
     "recommendations": {
       "application-observability": {
@@ -11986,6 +12007,9 @@
     "signup": {
       "button-label": "Registreren",
       "new-to-question": "Nieuw bij Grafana?"
+    },
+    "title": {
+      "sign-in": ""
     }
   },
   "logs": {
@@ -12129,7 +12153,8 @@
         "loading-message": ""
       },
       "trace-section": "",
-      "unpin-line": "Log vastzetten ongedaan maken"
+      "unpin-line": "Log vastzetten ongedaan maken",
+      "view-in-traces-drilldown": ""
     },
     "log-line-menu": {
       "copy-link": "Link naar logboekregel kopiëren",

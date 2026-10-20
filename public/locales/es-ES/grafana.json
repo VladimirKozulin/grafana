@@ -357,10 +357,6 @@
     },
     "ai": {
       "error-boundary": {
-        "alert-rule-button": "No se ha podido cargar el botón de regla de alerta de IA",
-        "feedback-button": "No se ha podido cargar el botón de comentarios con IA",
-        "improve-annotations-button": "No se ha podido cargar el botón de mejora de notas con IA",
-        "improve-labels-button": "No se ha podido cargar el botón de mejora de etiquetas con IA",
         "template-button": "No se ha podido cargar el botón de plantilla de IA",
         "triage-button": "No se ha podido cargar el botón de clasificación con IA"
       }
@@ -453,6 +449,11 @@
       "text-loading-rules": "Cargando reglas...",
       "title-search-alert-rule": "Buscar regla de alerta",
       "title-select-alert-instances": "Seleccionar instancias de alerta"
+    },
+    "alert-instance-silence-action": {
+      "silence": "",
+      "subtitle": "",
+      "title": ""
     },
     "alert-instance-state-filter": {
       "state": "Estado"
@@ -1143,6 +1144,8 @@
       }
     },
     "editor": {
+      "duplicate-alert-rule": "",
+      "duplicate-recording-rule": "",
       "edit-alert-rule": "Editar regla de alerta",
       "edit-recording-rule": "Editar regla de registro",
       "new-alert-rule": "Nueva regla de alerta",
@@ -1763,7 +1766,7 @@
         "datasource": "Fuente de datos de Alertmanager",
         "datasource-autosync-badge": "Sincronización automática",
         "heading": "Importar recursos de notificación",
-        "next-disabled-tooltip": "Rellena los campos obligatorios y espera a que se complete la validación antes de continuar.",
+        "next-disabled-tooltip": "",
         "no-datasources": "No se han encontrado fuentes de datos de Alertmanager.",
         "no-permission-desc": "No tienes permiso para importar recursos de notificación. Necesitas el permiso <strong>alerting.notifications:write</strong>. Puedes omitir este paso.",
         "no-permission-title": "Permisos insuficientes",
@@ -1801,6 +1804,7 @@
         "yaml-desc": "Tipos de archivos aceptados: {{extensions}}",
         "yaml-file": "YAML de configuración de Alertmanager",
         "yaml-invalid-type": "El archivo debe ser un archivo YAML ({{extensions}})",
+        "yaml-parse-error": "",
         "yaml-remove": "Eliminar {{name}}",
         "templates-added-title_one": "Archivo de plantilla añadido",
         "templates-added-title_other": "Archivos de plantilla añadidos"
@@ -2114,8 +2118,8 @@
       "add-matcher": "Añadir buscador de coincidencias",
       "aria-label-operator": "operador",
       "aria-label-remove-matcher": "Quitar buscador de coincidencias",
-      "label-alert-rule": "Regla de alerta",
       "label-label": "Etiqueta",
+      "label-matching-labels": "",
       "label-operator": "Operador",
       "label-refine-affected-alerts": "Refinar las alertas afectadas",
       "label-value": "Valor",
@@ -3419,6 +3423,7 @@
       "schedule": "Programar"
     },
     "silence-grafana-rule-drawer": {
+      "subtitle": "",
       "title-silence-alert-rule": "Silenciar regla de alerta"
     },
     "silence-period": {
@@ -3467,7 +3472,11 @@
       "preview-affected-instances": "Previsualiza las instancias de alerta afectadas por este silencio."
     },
     "silences-editor": {
+      "alert-rule-unavailable": "",
       "comment-placeholder-details-about-the-silence": "Detalles sobre el silencio",
+      "description-alert-rule-scope": "",
+      "description-alert-rule-unavailable": "",
+      "label-alert-rule": "",
       "label-comment": "Comentario",
       "label-created-by": "Creado por",
       "label-duration": "Duración",
@@ -5214,6 +5223,10 @@
   },
   "connections": {
     "add-new-connection": {
+      "add-category": "",
+      "add-type": "",
+      "all-categories": "",
+      "all-types": "",
       "category": "Categoría",
       "clear": "Borrar",
       "filter-by-category": "Filtrar por categoría",
@@ -5242,7 +5255,10 @@
         "by-published-date": "Por fecha de publicación",
         "by-updated-date": "Por fecha de actualización"
       },
+      "remove-filter-value": "",
       "reset-filters": "Restablecer filtros",
+      "selected-categories": "",
+      "selected-types": "",
       "sort": "Ordenar",
       "sort-list": "Ordenar lista de plugins",
       "state": "Estado",
@@ -11203,16 +11219,11 @@
     },
     "dashboard-tabs": {
       "most-used": "Más usados",
-      "most-used-active": "Dashboards más usados",
       "recent": "Recientes",
-      "recent-active": "Dashboards recientes",
       "retry": "Reintentar",
       "starred": "Destacado",
-      "starred-active": "Dashboards destacados"
-    },
-    "dashboards": {
-      "title": "Dashboards",
-      "view-all": "Ver todo"
+      "title": "",
+      "view-all-dashboards": ""
     },
     "firing-alerts-card": {
       "create": "Crear una regla de alerta",
@@ -11389,15 +11400,25 @@
       },
       "title": "Resumen de tu pila de observabilidad"
     },
-    "recent-dashboards-tab": {
-      "browse": "Explorar dashboards",
-      "clear": "Borrar historial",
-      "create": "Crea tu primer dashboard",
-      "empty": "Los dashboards que hayas visto recientemente aparecerán aquí.",
-      "empty-description": "Después de conectar los datos, puedes usar los dashboards para consultar y visualizar tus datos con gráficos, estadísticas y tablas o crear listas, markdowns y otros widgets.",
-      "error-title": "No se han podido cargar los dashboards vistos recientemente",
-      "loading": "Cargando dashboards vistos recientemente...",
-      "reset": "Restablecer dashboards recientes"
+    "recent-activity-tab": {
+      "browse": "",
+      "clear": "",
+      "create": "",
+      "empty": "",
+      "error-title": "",
+      "filter-alerting": "",
+      "filter-all": "",
+      "filter-apps": "",
+      "filter-dashboards": "",
+      "filter-explore": "",
+      "filter-label": "",
+      "filter-pages": "",
+      "kind-alerting": "",
+      "kind-app": "",
+      "kind-dashboard": "",
+      "kind-explore": "",
+      "kind-page": "",
+      "loading": ""
     },
     "recommendations": {
       "application-observability": {
@@ -11986,6 +12007,9 @@
     "signup": {
       "button-label": "Regístrate",
       "new-to-question": "¿Te acabas de unir a Grafana?"
+    },
+    "title": {
+      "sign-in": ""
     }
   },
   "logs": {
@@ -12129,7 +12153,8 @@
         "loading-message": ""
       },
       "trace-section": "",
-      "unpin-line": "Desanclar log"
+      "unpin-line": "Desanclar log",
+      "view-in-traces-drilldown": ""
     },
     "log-line-menu": {
       "copy-link": "Copiar enlace a la línea de registro",

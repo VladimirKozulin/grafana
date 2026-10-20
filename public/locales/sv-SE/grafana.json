@@ -357,10 +357,6 @@
     },
     "ai": {
       "error-boundary": {
-        "alert-rule-button": "Knappen för AI-varningsregel kunde inte laddas",
-        "feedback-button": "Knappen för AI-feedback kunde inte laddas",
-        "improve-annotations-button": "Knappen för AI-förbättrade kommentarer kunde inte laddas",
-        "improve-labels-button": "Knappen för AI-förbättrade etiketter kunde inte laddas",
         "template-button": "Knappen för AI-mall kunde inte laddas",
         "triage-button": "Knappen för AI-prioritering kunde inte laddas"
       }
@@ -453,6 +449,11 @@
       "text-loading-rules": "Laddar regler …",
       "title-search-alert-rule": "Sök varningsregel",
       "title-select-alert-instances": "Välj larminstanser"
+    },
+    "alert-instance-silence-action": {
+      "silence": "",
+      "subtitle": "",
+      "title": ""
     },
     "alert-instance-state-filter": {
       "state": "Tillstånd"
@@ -1143,6 +1144,8 @@
       }
     },
     "editor": {
+      "duplicate-alert-rule": "",
+      "duplicate-recording-rule": "",
       "edit-alert-rule": "Redigera varningsregel",
       "edit-recording-rule": "Redigera inspelningsregel",
       "new-alert-rule": "Ny varningsregel",
@@ -1763,7 +1766,7 @@
         "datasource": "Alertmanager-datakälla",
         "datasource-autosync-badge": "Automatisk synkronisering",
         "heading": "Importera aviseringsresurser",
-        "next-disabled-tooltip": "Fyll i de obligatoriska fälten och vänta tills valideringen har slutförts innan du fortsätter.",
+        "next-disabled-tooltip": "",
         "no-datasources": "Inga Alertmanager-datakällor hittades",
         "no-permission-desc": "Du saknar behörighet att importera aviseringresurser. Du behöver behörigheten <strong>alerting.notifications:write</strong>. Du kan hoppa över detta steg.",
         "no-permission-title": "Otillräckliga behörigheter",
@@ -1801,6 +1804,7 @@
         "yaml-desc": "Accepterade filtyper: {{extensions}}",
         "yaml-file": "YAML för konfigurationen för Alertmanager",
         "yaml-invalid-type": "Filen måste vara en YAML-fil ({{extensions}})",
+        "yaml-parse-error": "",
         "yaml-remove": "Ta bort {{name}}",
         "templates-added-title_one": "Mallfil tillagd",
         "templates-added-title_other": "Mallfiler tillagda"
@@ -2114,8 +2118,8 @@
       "add-matcher": "Lägg till matchare",
       "aria-label-operator": "operatör",
       "aria-label-remove-matcher": "Ta bort matcharen",
-      "label-alert-rule": "Varningsregel",
       "label-label": "Etikett",
+      "label-matching-labels": "",
       "label-operator": "Operatör",
       "label-refine-affected-alerts": "Förfina berörda larm",
       "label-value": "Värde",
@@ -3419,6 +3423,7 @@
       "schedule": "Schema"
     },
     "silence-grafana-rule-drawer": {
+      "subtitle": "",
       "title-silence-alert-rule": "Tyst larmregel"
     },
     "silence-period": {
@@ -3467,7 +3472,11 @@
       "preview-affected-instances": "Förhandsgranska de varningsinstanser som påverkas av denna tystnad."
     },
     "silences-editor": {
+      "alert-rule-unavailable": "",
       "comment-placeholder-details-about-the-silence": "Detaljer om tystnad",
+      "description-alert-rule-scope": "",
+      "description-alert-rule-unavailable": "",
+      "label-alert-rule": "",
       "label-comment": "Kommentar",
       "label-created-by": "Skapat av",
       "label-duration": "Varaktighet",
@@ -5214,6 +5223,10 @@
   },
   "connections": {
     "add-new-connection": {
+      "add-category": "",
+      "add-type": "",
+      "all-categories": "",
+      "all-types": "",
       "category": "Kategori",
       "clear": "Rensa",
       "filter-by-category": "Filtrera efter kategori",
@@ -5242,7 +5255,10 @@
         "by-published-date": "Efter publiceringsdatum",
         "by-updated-date": "Efter uppdateringsdatum"
       },
+      "remove-filter-value": "",
       "reset-filters": "Återställ filter",
+      "selected-categories": "",
+      "selected-types": "",
       "sort": "Sortera",
       "sort-list": "Sortera listan över tilläggsprogram",
       "state": "Tillstånd",
@@ -11203,16 +11219,11 @@
     },
     "dashboard-tabs": {
       "most-used": "Mest använd",
-      "most-used-active": "Mest använda instrumentpaneler",
       "recent": "Senaste",
-      "recent-active": "Senaste paneler",
       "retry": "Försök igen",
       "starred": "Stjärnmärkt",
-      "starred-active": "Stjärnmärkta instrumentpaneler"
-    },
-    "dashboards": {
-      "title": "Instrumentpaneler",
-      "view-all": "Visa alla"
+      "title": "",
+      "view-all-dashboards": ""
     },
     "firing-alerts-card": {
       "create": "Skapa en larmregel",
@@ -11389,15 +11400,25 @@
       },
       "title": "Översikt över din observerbarhetsstack"
     },
-    "recent-dashboards-tab": {
-      "browse": "Bläddra bland instrumentpaneler",
-      "clear": "Rensa historik",
-      "create": "Skapa din första instrumentpanel",
-      "empty": "Instrumentpaneler som du nyligen har tittat på visas här.",
-      "empty-description": "När du har kopplat till data kan du använda paneler för att ställa frågor och visualisera dina data med diagram, statistik och tabeller eller skapa listor, markdown-dokument och andra komponenter.",
-      "error-title": "Det gick inte att ladda senast visade instrumentpaneler",
-      "loading": "Laddar senast visade instrumentpaneler …",
-      "reset": "Återställ senaste instrumentpaneler"
+    "recent-activity-tab": {
+      "browse": "",
+      "clear": "",
+      "create": "",
+      "empty": "",
+      "error-title": "",
+      "filter-alerting": "",
+      "filter-all": "",
+      "filter-apps": "",
+      "filter-dashboards": "",
+      "filter-explore": "",
+      "filter-label": "",
+      "filter-pages": "",
+      "kind-alerting": "",
+      "kind-app": "",
+      "kind-dashboard": "",
+      "kind-explore": "",
+      "kind-page": "",
+      "loading": ""
     },
     "recommendations": {
       "application-observability": {
@@ -11986,6 +12007,9 @@
     "signup": {
       "button-label": "Registrera dig",
       "new-to-question": "Ny på Grafana?"
+    },
+    "title": {
+      "sign-in": ""
     }
   },
   "logs": {
@@ -12129,7 +12153,8 @@
         "loading-message": ""
       },
       "trace-section": "",
-      "unpin-line": "Frigör logg"
+      "unpin-line": "Frigör logg",
+      "view-in-traces-drilldown": ""
     },
     "log-line-menu": {
       "copy-link": "Kopiera länk till loggrad",

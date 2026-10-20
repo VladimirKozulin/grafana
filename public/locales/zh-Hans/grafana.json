@@ -357,10 +357,6 @@
     },
     "ai": {
       "error-boundary": {
-        "alert-rule-button": "AI 警报规则按钮加载失败",
-        "feedback-button": "AI 反馈按钮加载失败",
-        "improve-annotations-button": "AI 改进注释按钮加载失败",
-        "improve-labels-button": "AI 改进标签按钮加载失败",
         "template-button": "AI 模板按钮加载失败",
         "triage-button": "AI 分类按钮加载失败"
       }
@@ -448,6 +444,11 @@
       "text-loading-rules": "正在加载规则...",
       "title-search-alert-rule": "搜索警报规则",
       "title-select-alert-instances": "选择警报实例"
+    },
+    "alert-instance-silence-action": {
+      "silence": "",
+      "subtitle": "",
+      "title": ""
     },
     "alert-instance-state-filter": {
       "state": "状态"
@@ -1136,6 +1137,8 @@
       }
     },
     "editor": {
+      "duplicate-alert-rule": "",
+      "duplicate-recording-rule": "",
       "edit-alert-rule": "编辑提醒规则",
       "edit-recording-rule": "编辑录制规则",
       "new-alert-rule": "新建警报规则",
@@ -1755,7 +1758,7 @@
         "datasource": "Alertmanager 数据源",
         "datasource-autosync-badge": "自动同步",
         "heading": "导入通知资源",
-        "next-disabled-tooltip": "填写必填字段并等待验证通过，然后再继续。",
+        "next-disabled-tooltip": "",
         "no-datasources": "未找到 Alertmanager 数据源",
         "no-permission-desc": "您没有导入通知资源的权限。您需要 <strong>alerting.notifications:write</strong> 权限。您可以跳过此步骤。",
         "no-permission-title": "权限不足",
@@ -1793,6 +1796,7 @@
         "yaml-desc": "可接受的文件类型：{{extensions}}",
         "yaml-file": "Alertmanager 配置 YAML",
         "yaml-invalid-type": "文件必须是 YAML 文件 ({{extensions}})",
+        "yaml-parse-error": "",
         "yaml-remove": "移除 {{name}}",
         "templates-added-title_other": "模板文件已添加"
       },
@@ -2101,8 +2105,8 @@
       "add-matcher": "添加匹配器",
       "aria-label-operator": "运算符",
       "aria-label-remove-matcher": "移除匹配器",
-      "label-alert-rule": "提醒规则",
       "label-label": "标签",
+      "label-matching-labels": "",
       "label-operator": "运算符",
       "label-refine-affected-alerts": "优化受影响的警报",
       "label-value": "值",
@@ -3386,6 +3390,7 @@
       "schedule": "安排计划"
     },
     "silence-grafana-rule-drawer": {
+      "subtitle": "",
       "title-silence-alert-rule": "静默警报规则"
     },
     "silence-period": {
@@ -3434,7 +3439,11 @@
       "preview-affected-instances": "预览受此静默影响的提醒实例。"
     },
     "silences-editor": {
+      "alert-rule-unavailable": "",
       "comment-placeholder-details-about-the-silence": "有关静默的详情",
+      "description-alert-rule-scope": "",
+      "description-alert-rule-unavailable": "",
+      "label-alert-rule": "",
       "label-comment": "评论",
       "label-created-by": "创建者：",
       "label-duration": "时长",
@@ -5167,6 +5176,10 @@
   },
   "connections": {
     "add-new-connection": {
+      "add-category": "",
+      "add-type": "",
+      "all-categories": "",
+      "all-types": "",
       "category": "类别",
       "clear": "清除",
       "filter-by-category": "按类别筛选",
@@ -5195,7 +5208,10 @@
         "by-published-date": "按发布日期",
         "by-updated-date": "按更新日期"
       },
+      "remove-filter-value": "",
       "reset-filters": "重置筛选条件",
+      "selected-categories": "",
+      "selected-types": "",
       "sort": "排序",
       "sort-list": "对插件列表排序",
       "state": "状态",
@@ -11125,16 +11141,11 @@
     },
     "dashboard-tabs": {
       "most-used": "最常用",
-      "most-used-active": "最常用的数据面板",
       "recent": "最近",
-      "recent-active": "最近的数据面板",
       "retry": "重试",
       "starred": "已加星标",
-      "starred-active": "已加星标的数据面板"
-    },
-    "dashboards": {
-      "title": "数据面板",
-      "view-all": "查看全部"
+      "title": "",
+      "view-all-dashboards": ""
     },
     "firing-alerts-card": {
       "create": "创建警报规则",
@@ -11309,15 +11320,25 @@
       },
       "title": "您的可观测性堆栈概览"
     },
-    "recent-dashboards-tab": {
-      "browse": "浏览数据面板",
-      "clear": "清除历史记录",
-      "create": "创建您的第一个数据面板",
-      "empty": "您最近查看的数据面板将显示在此处。",
-      "empty-description": "连接数据后，您可以使用数据面板来查询数据，并使用图表、统计信息和表格将数据可视化，或创建列表、Markdown 和其他小部件。",
-      "error-title": "无法加载最近查看的数据面板",
-      "loading": "正在加载最近查看的数据面板...",
-      "reset": "重置最近的数据面板"
+    "recent-activity-tab": {
+      "browse": "",
+      "clear": "",
+      "create": "",
+      "empty": "",
+      "error-title": "",
+      "filter-alerting": "",
+      "filter-all": "",
+      "filter-apps": "",
+      "filter-dashboards": "",
+      "filter-explore": "",
+      "filter-label": "",
+      "filter-pages": "",
+      "kind-alerting": "",
+      "kind-app": "",
+      "kind-dashboard": "",
+      "kind-explore": "",
+      "kind-page": "",
+      "loading": ""
     },
     "recommendations": {
       "application-observability": {
@@ -11887,6 +11908,9 @@
     "signup": {
       "button-label": "注册",
       "new-to-question": "初次使用 Grafana？"
+    },
+    "title": {
+      "sign-in": ""
     }
   },
   "logs": {
@@ -12027,7 +12051,8 @@
         "loading-message": ""
       },
       "trace-section": "",
-      "unpin-line": "取消固定日志"
+      "unpin-line": "取消固定日志",
+      "view-in-traces-drilldown": ""
     },
     "log-line-menu": {
       "copy-link": "将链接复制到日志行",
